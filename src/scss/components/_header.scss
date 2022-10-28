@@ -1,0 +1,57 @@
+.header {
+
+  &__container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__right {
+    width: 100%;
+  }
+
+  &__right-info {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+
+.right-info {
+
+  &__language-list {
+    display: flex;
+  }
+
+  &__language-item {
+    width: 33px;
+    height: 25px;
+  }
+
+  &__language {
+  }
+
+  &__address {
+  }
+
+  &__tel {
+  }
+}
+.list-reset {
+}
+.phone {
+}
+.nav {
+
+  &__list {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__item {
+    @include mr (15px);
+  }
+
+  &__link {
+  }
+}

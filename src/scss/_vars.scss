@@ -1,0 +1,36 @@
+// если вы хотите использовать sass-переменные - удалите root
+
+:root {
+  // base
+  --font-family: "Montserrat", sans-serif;
+  --content-width: 1570px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-light: #fff;
+  --color-main: #323264;
+  --color-alt: #46466E;
+  --color-soft: #686887;
+  --color-accent: #f0145a;
+  --color-active-regular: #24a3ff;
+  --color-active-hover: #0085ff;
+  --color-active: #006ccf;
+  --color-bg: #f5f5fa;
+  --color-bg-alt: #ededf7;
+  --color-text: #b3b3ba;
+  --color-separator: #e6e6f0;
+  --color-garient: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+  --color-garient-soft: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+  --color-garient-red: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+  --color-garient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  --color-garient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+
+    // titels
+    --title-hero-fz : 38px;
+    --title-h2-fz : 30px;
+    --title-h3-fz : 22px;
+    --title-h3Caps-fz : 14px;
+    --title-h4-fz : 16px;
+
+}
