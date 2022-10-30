@@ -1,5 +1,9 @@
 .header {
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   &__container {
     padding-top: 50px;
     display: flex;
@@ -7,51 +11,110 @@
   }
 
   &__right {
-    width: 100%;
   }
 
   &__right-info {
-    display: flex;
-    justify-content: end;
   }
 }
 
+.logo {
+}
 
 .right-info {
-
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
   &__language-list {
-    display: flex;
+    position: relative;
+    margin-right: 18px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      top: 6px;
+      right: -12px;
+      background-color: var(--color-separator);
+    }
   }
 
-  &__language-item {
-    width: 33px;
-    height: 25px;
-  }
+  &__language-link {
+    padding: 5px 7px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-light);
+    border-radius: 8px;
+    transition: ease-in-out 0.3s;
 
-  &__language {
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+    }
+
+    &--active {
+      background: var(--color-accent);
+      border-radius: 8px;
+      transition: ease-in-out 0.3s;
+    }
   }
 
   &__address {
+    position: relative;
+    margin-right: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-light);
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      top: 6px;
+      right: -12px;
+      background-color: var(--color-separator);
+    }
   }
 
   &__tel {
-  }
-}
-.list-reset {
-}
-.phone {
-}
-.nav {
+    position: relative;
+    margin-right: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
 
-  &__list {
-    display: flex;
-    justify-content: end;
+    a {
+      color: var(--color-light);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      top: 6px;
+      right: -12px;
+      background-color: var(--color-separator);
+    }
   }
 
-  &__item {
-    @include mr (15px);
-  }
+  &__social {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-light);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
 
-  &__link {
+    &:hover {
+      fill: var(--color-accent);
+    }
   }
 }

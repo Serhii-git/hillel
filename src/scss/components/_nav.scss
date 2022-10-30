@@ -1,0 +1,38 @@
+.nav {
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    @include mr(15px);
+  }
+
+  &__link {
+    position: relative;
+    padding-bottom: 5px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--color-light);
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -2px;
+      transition: 0.3s;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.nav-link__active {
+  border-bottom: 2px solid var(--color-accent);
+  color: var(--color-accent);
+}

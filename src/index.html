@@ -7,12 +7,20 @@
   <div class="site-container">
     <div class="background">
       @include('partials/header.html')
-
+      @include('partials/hero.html')
+      @include('partials/experience.html')
+      @include('partials/services.html')
+    </div>
+    <div class="shadow section-offset">
+      <picture>
+        <source srcset="img/shadow.avif" type="image/avif">
+        <source srcset="img/shadow.webp" type="image/webp">
+        <img loading="lazy" src="img/shadow.jpg">
+      </picture>
     </div>
 
-
     <main class="main">
-      <!-- @include('html/h1.html') пример include -->
+      @include('partials/team.html')
     </main>
 
     @include('partials/footer.html')
