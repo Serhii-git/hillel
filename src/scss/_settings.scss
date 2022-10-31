@@ -23,3 +23,50 @@
   font-size: 38px;
   line-height: 46px;
 }
+
+.our-address {
+  position: relative;
+  margin-right: 18px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-light);
+  &--dark {
+    color: var(--color-main);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 6px;
+    right: -12px;
+    background-color: var(--color-separator);
+  }
+}
+
+.our-tel {
+  position: relative;
+  margin-right: 18px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-light);
+  &--dark {
+    color: var(--color-main);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 6px;
+    right: -12px;
+    background-color: var(--color-separator);
+  }
+}
+
+.background-gray {
+  background-color: var(--color-bg);
+}

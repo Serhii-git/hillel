@@ -17,9 +17,6 @@
   }
 }
 
-.logo {
-}
-
 .right-info {
   display: flex;
   align-items: center;
@@ -65,45 +62,11 @@
   }
 
   &__address {
-    position: relative;
-    margin-right: 18px;
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--color-light);
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      top: 6px;
-      right: -12px;
-      background-color: var(--color-separator);
-    }
   }
 
   &__tel {
-    position: relative;
-    margin-right: 18px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-
-    a {
-      color: var(--color-light);
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      top: 6px;
-      right: -12px;
-      background-color: var(--color-separator);
-    }
+   
   }
 
   &__social {

@@ -1,6 +1,8 @@
 .clients {
 
   &__container {
+    margin: 0 auto;
+    max-width: 1720px;
   }
 
   &__title {
@@ -26,6 +28,7 @@
   }
 
   &__link {
+    padding: 10px;
     display: flex;
     align-items: center;
   }
