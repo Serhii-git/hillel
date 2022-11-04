@@ -1,10 +1,11 @@
 .team {
   &__container {
+    @include big-desktop {
+      max-width: 1320px;
+    }
   }
 }
 
-.swiper {
-}
 .swiper-wrapper {
   margin-bottom: 50px;
 }
@@ -29,6 +30,10 @@
 
   &__descr {
     max-width: 1200px;
+    padding-right: 30px;
+    @include big-desktop {
+      max-width: 860px;
+    }
   }
 
   &__breadcrumbs {

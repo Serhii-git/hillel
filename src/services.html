@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header-decor.html')
+    <main class="main">
+      <div class="background">
+        <div class="services-page__container">
+          <section class="services-section">
+            <div class="container services-section__container">
+              <ul class="breadcrumbs services__breadcrumbs list-reset">
+                <li class="breadcrumbs__item">
+                  <a href="services.html" class="breadcrumbs__link">Services</a>
+                </li>
+              </ul>
+              <div class="services-section__info">
+                <h2 class="services-section__title section-title">What can we do better than others?</h2>
+                <ul class="services-section__list list-reset">
+                  <li class="services-section__item">
+                    <img loading="lazy" src="img/ecommerce.svg" class="services-section__item-image" width="64" height="64"
+                      alt="IT and e-commerce">
+                    <h3 class="services-section__item-title"><a href="services-it-and-e-commers.html">IT and e-commerce</a></h3>
+                    <p class="services-section__item-text">An endless stream of contracts, tax issues, labor relations, corporate papers -
+                      legal work
+                      distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
+                  </li>
+                  <li class="services-section__item">
+                    <img loading="lazy" src="img/support.svg" class="services-section__item-image" width="64" height="64"
+                      alt="Comprehensive daily legal support">
+                    <h3 class="services-section__item-title"><a href="#">Comprehensive daily legal support</a></h3>
+                    <p class="services-section__item-text">In addition, over time, the work will become the same type and uninteresting for
+                      a
+                      full-time
+                      lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information
+                      technology in Ukraine.</p>
+                  </li>
+                  <li class="services-section__item">
+                    <img loading="lazy" src="img/coprorate.svg" class="services-section__item-image" width="64" height="64"
+                      alt="Structuring corporate relationships">
+                    <h3 class="services-section__item-title"><a href="#">Structuring corporate relationships</a></h3>
+                    <p class="services-section__item-text">Instead of just providing legal services, we will hire a lawyer or a whole team
+                      that will
+                      fit into
+                      the daily life of your company.</p>
+                  </li>
+                  <li class="services-section__item">
+                    <img loading="lazy" src="img/trust.svg" class="services-section__item-image" width="64" height="64"
+                      alt="Building contractual relations">
+                    <h3 class="services-section__item-title"><a href="#">Building contractual relations</a></h3>
+                    <p class="services-section__item-text">Once a week, or week after month, you have your own lawyer by your side. Anyone
+                      in
+                      the
+                      company can
+                      catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
+                  </li>
+                  <li class="services-section__item">
+                    <img loading="lazy" src="img/protection.svg" class="services-section__item-image" width="64" height="64"
+                      alt="Protection of business, intellectual property">
+                    <h3 class="services-section__item-title"><a href="#">Protection of business, intellectual property</a></h3>
+                    <p class="services-section__item-text">And all the other time he will work on new diverse projects, so he will
+                      definitely
+                      not stop
+                      in
+                      professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
+                  </li>
+                  <li class="services-section__item">
+                    <img loading="lazy" src="img/court.svg" class="services-section__item-image" width="64" height="64"
+                      alt="Judicial representation">
+                    <h3 class="services-section__item-title"><a href="#">Judicial representation</a></h3>
+                    <p class="services-section__item-text">Is it a small, medium-sized company or a market leader? Local business or
+                      multinational
+                      company? Do you have your own legal department or not?</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="shadow section-offset">
+        <picture>
+          <source srcset="img/shadow.avif" type="image/avif">
+          <source srcset="img/shadow.webp" type="image/webp">
+          <img loading="lazy" src="img/shadow.jpg">
+        </picture>
+      </div>
+
+
+      @include('partials/clients.html')
+    </main>
+    <div class="background-gray">
+      @include('partials/footer.html')
+    </div>
+  </div>
+</body>
+
+</html>

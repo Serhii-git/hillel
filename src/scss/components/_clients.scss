@@ -1,5 +1,7 @@
 .clients {
-
+  @include big-desktop {
+   margin-bottom: 0;
+   }
   &__container {
     margin: 0 auto;
     max-width: 1720px;
@@ -7,6 +9,7 @@
 
   &__title {
     margin-bottom: 30px;
+    font-size: var(--title-h3Caps-fz);
     font-weight: 700;
     line-height: 17px;
     letter-spacing: 1px;
@@ -36,6 +39,20 @@
     }
     &:last-child {
       border-bottom-right-radius: 12px;
+    }
+    @include big-desktop {
+      &:first-child {
+        border-top-left-radius: 0;
+      }
+      &:nth-child(4) {
+        border-top-right-radius: 0;
+      }
+      &:nth-last-child(4) {
+        border-bottom-left-radius: 0;
+      }
+      &:last-child {
+        border-bottom-right-radius: 0;
+      }
     }
   }
 

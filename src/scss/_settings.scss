@@ -11,16 +11,13 @@
   }
 }
 
-.logo {
-}
-
 .section-offset {
   margin-bottom: 60px;
 }
 
 .section-title {
   font-weight: 700;
-  font-size: 38px;
+  font-size: var(--title-hero-fz);
   line-height: 46px;
   color: var(--color-accent);
 }
@@ -65,9 +62,39 @@
     top: 6px;
     right: -12px;
     background-color: var(--color-separator);
+    cursor: auto;
+  }
+}
+
+.our-email {
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--color-active-regular);
+  transition: ease-in-out 0.2s;
+  &:hover {
+    color: var(--color-accent);
   }
 }
 
 .background-gray {
   background-color: var(--color-bg);
+}
+
+.btn {
+  &__body {
+    padding: 18px 30px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--color-light);
+    background: var(--color-active-regular);
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    transition: background 0.2s;
+    &:hover {
+      background: var(--color-active-hover);
+    }
+    &:active {
+      background: var(--color-active);
+    }
+  }
 }

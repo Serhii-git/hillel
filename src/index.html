@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="en" class="page">
 
 @include('partials/head.html')
 
 <body class="page__body">
   <div class="site-container">
-    <div class="background">
-      @include('partials/header.html')
-      @include('partials/hero.html')
-      @include('partials/experience.html')
-      @include('partials/services.html')
-    </div>
-    <div class="shadow section-offset">
-      <picture>
-        <source srcset="img/shadow.avif" type="image/avif">
-        <source srcset="img/shadow.webp" type="image/webp">
-        <img loading="lazy" src="img/shadow.jpg">
-      </picture>
-    </div>
-
+    @include('partials/header.html')
     <main class="main">
+      <div class="background">
+        @include('partials/hero.html')
+        @include('partials/experience.html')
+        @include('partials/services-section.html')
+      </div>
+      <div class="shadow section-offset">
+        <picture>
+          <source srcset="img/shadow.avif" type="image/avif">
+          <source srcset="img/shadow.webp" type="image/webp">
+          <img loading="lazy" src="img/shadow.jpg">
+        </picture>
+      </div>
       @include('partials/team.html')
       @include('partials/clients.html')
+      <div class="background-gray">
+        @include('partials/publications-section.html')
     </main>
-    <div class="background-gray">
-
-      @include('partials/publications.html')
-      @include('partials/footer.html')
-    </div>
+    @include('partials/footer.html')
+  </div>
   </div>
 </body>
 

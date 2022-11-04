@@ -1,0 +1,85 @@
+.tabs {
+  &__nav {
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 375px;
+    padding-left: 0;
+
+    @include big-desktop {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav-item {
+   @include mb(30px);
+
+  }
+
+  &__nav-btn {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: var(--color-text);
+    transition: 0.3s;
+    text-align: end;
+    &:hover {
+      color: var(--color-accent);
+    }
+    &:focus {
+      color: var(--color-text);
+      background-color: transparent;
+    }
+    &--active {
+      background-image: var(--color-garient-red-text);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__content {
+    position: relative;
+    max-width: 860px;
+    margin-left: 60px;
+    ::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -60px;
+      width: 4px;
+      height: 100%;
+      background-color: var(--color-light);
+      opacity: 0.3;
+    }
+    @include big-desktop {
+      max-width: 580px;
+    }
+  }
+
+  &__panel {
+  }
+
+  &__panel-title {
+    padding-top: 73px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: var(--color-light);
+    @include big-desktop {
+      padding-top: 43px;
+    }
+  }
+
+  &__panel-text {
+    margin-bottom: 73px;
+    font-size: 19px;
+    line-height: 30px;
+    color: var(--color-light);
+    @include big-desktop {
+      margin-bottom: 0;
+    }
+  }
+}

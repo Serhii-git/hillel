@@ -1,0 +1,76 @@
+.services-ecommers-section {
+  &__container {
+    max-width: 1360px;
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    margin-bottom: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto 30px;
+    width: 92px;
+    height: 92px;
+    padding: 14px;
+    border-radius: 24px;
+    background-color: var(--color-light);
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    background-image: var(--color-garient-red-text);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 19px;
+    line-height: 30px;
+    color: var(--color-light);
+  }
+
+  &__btn {
+  }
+
+  &__description {
+    display: flex;
+  }
+}
+
+.description {
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: var(--title-h3-fz);
+    line-height: 27px;
+    color: var(--color-light);
+  }
+
+  &__list {
+  }
+
+  &__item {
+    @include mb(15px);
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--color-light);
+  }
+}
+
+.description-left {
+  margin-right: 60px;
+  max-width: 635px;
+}
+
+.description-right {
+}

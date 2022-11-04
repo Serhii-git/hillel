@@ -3,6 +3,9 @@
     display: flex;
     justify-content: space-between;
     border-top: 2px solid var(--color-separator);
+    @include big-desktop {
+      max-width: 1320px;
+    }
   }
 
   &__left {
@@ -21,7 +24,7 @@
     margin-bottom: 30px;
     display: flex;
     align-items: center;
-    p{
+    p {
       position: relative;
     }
     &::after {
@@ -75,15 +78,5 @@
     &::after {
       background-color: var(--color-text);
     }
-  }
-}
-
-.our-email {
-  font-weight: 700;
-  line-height: 20px;
-  color: var(--color-active-regular);
-  transition: ease-in-out 0.2s;
-  &:hover {
-    color: var(--color-accent);
   }
 }

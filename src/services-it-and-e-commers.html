@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header-decor.html')
+    <main class="main">
+      <div class="background">
+        <div class="services-page__container">
+          <section class="services-ecommers-section">
+            <div class="services-ecommers-section__container container">
+              <div class="services-ecommers-section__info">
+                <img loading="lazy" src="img/ecommerce.svg" class="services-ecommers-section__image" width="64" height="64"
+                  alt="IT and e-commerce">
+                <h2 class="services-ecommers-section__title section-title centered">IT and e-commerce</h2>
+                <p class="services-ecommers-section__text centered">An endless stream of contracts, tax issues, labor relations, corporate
+                  papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
+                <p class="services-ecommers-section__text centered">In addition, over time, the work will become the same type and
+                  uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience
+                  in the field of information technology in Ukraine.</p>
+                <a href="#" class="btn-reset btn services-ecommers-section__btn ">
+                  <span class="btn__body">Free consultation</span></a>
+              </div>
+              <h3 class="description__title">Services in this area:</h3>
+              <div class="services-ecommers-section__description">
+                <div class="description-left">
+                  <ul class="description__list list-reset">
+                    <li class="description__item">
+                      <p class="description__text">support of investment projects for the development of port infrastructure;</p>
+                    </li>
+                    <li class="description__item">
+                      <p class="description__text">certification of GTS, entering information about them in mandatory databases and
+                        registers;</p>
+                    </li>
+                    <li class="description__item">
+                      <p class="description__text">registration of permits for the construction of port terminals;</p>
+                    </li>
+                    <li class="description__item">
+                      <p class="description__text">registration of permit and other mandatory documentation required for carrying out
+                        activities in the port (emission permit, conclusion on EIA, RTC, etc.);</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description-right">
+                  <ul class="description__list list-reset">
+                    <li class="description__item">
+                      <p class="description__text">support of procedures related to the lease of state property in the port;</p>
+                    </li>
+                    <li class="description__item">
+                      <p class="description__text">support of procedures related to confirmation of the status of port operator, maritime
+                        agent, foreign sailing line;</p>
+                    </li>
+                    <li class="description__item">
+                      <p class="description__text">support of procedures related to the inclusion of the company within the port;</p>
+                    </li>
+                    <li class="description__item">
+                      <p class="description__text">appeals against actions related to the illegal imposition of services in the port by
+                        monopoly companies.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="shadow section-offset">
+        <picture>
+          <source srcset="img/shadow.avif" type="image/avif">
+          <source srcset="img/shadow.webp" type="image/webp">
+          <img loading="lazy" src="img/shadow.jpg">
+        </picture>
+      </div>
+      @include('partials/publications-section.html')
+    </main>
+    <div class="background-gray">
+      @include('partials/footer.html')
+    </div>
+  </div>
+</body>
+
+</html>
