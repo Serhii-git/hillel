@@ -1,0 +1,126 @@
+.header {
+  //background: greenyellow;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // z-index: 100;
+  // &__container {
+  //   padding-top: 50px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   //background-color: var(--color-main);
+  //   @include big-desktop {
+  //     max-width: 1320px;
+  //   }
+  // }
+
+  // &__logo {
+  //   margin-right: 4px;
+  // }
+
+  &__right {
+    // width: 100%;
+  }
+
+  // &__right-info {
+  //   justify-content: end;
+  // }
+}
+
+.right-info {
+  // display: flex;
+  // align-items: center;
+  // margin-bottom: 16px;
+  // &__language-list {
+  //   position: relative;
+  //   margin-right: 18px;
+
+  //   &::after {
+  //     position: absolute;
+  //     content: "";
+  //     width: 6px;
+  //     height: 6px;
+  //     border-radius: 50%;
+  //     top: 6px;
+  //     right: -12px;
+  //     background-color: var(--color-separator);
+  //   }
+  // }
+
+  &__language-link {
+    // padding: 5px 7px;
+    // font-weight: 700;
+    // font-size: 12px;
+    // line-height: 15px;
+    // text-align: center;
+    // text-transform: uppercase;
+    // letter-spacing: 1px;
+    // color: var(--color-light);
+    // border-radius: 8px;
+    // transition: ease-in-out 0.3s;
+
+    // &:hover {
+    //   background: rgba(255, 255, 255, 0.2);
+    //   border-radius: 8px;
+    // }
+
+    // &--active {
+    //   background: var(--color-accent);
+    //   border-radius: 8px;
+    //   transition: ease-in-out 0.3s;
+    // }
+    &--light {
+      color: var(--color-text);
+      &:hover {
+        background: var(--color-bg);
+        border-radius: 8px;
+      }
+
+      &--active {
+        background: var(--color-accent);
+        border-radius: 8px;
+        color: var(--color-light);
+        transition: ease-in-out 0.3s;
+      }
+    }
+  }
+
+  &__address {
+  }
+
+  &__tel {
+  }
+
+  &__social {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-light);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      fill: var(--color-accent);
+    }
+  }
+}
+
+.decor {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 135px;
+    background-image: url("../img/slash.png");
+    width: 21px;
+    height: 47px;
+  }
+  &__text {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--color-light);
+  }
+}

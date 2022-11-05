@@ -81,20 +81,18 @@
 }
 
 .btn {
-  &__body {
-    padding: 18px 30px;
-    font-weight: 700;
-    line-height: 20px;
-    color: var(--color-light);
-    background: var(--color-active-regular);
-    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-    border-radius: 12px;
-    transition: background 0.2s;
-    &:hover {
-      background: var(--color-active-hover);
-    }
-    &:active {
-      background: var(--color-active);
-    }
+  padding: 18px 30px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--color-light);
+  background: var(--color-active-regular);
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  transition: background 0.2s;
+  &:hover {
+    background: var(--color-active-hover);
+  }
+  &:active {
+    background: var(--color-active);
   }
 }

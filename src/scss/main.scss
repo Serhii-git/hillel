@@ -7,6 +7,7 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/header-light";
 @import "./components/breadcrumbs";
 @import "./components/nav";
 @import "./components/tabs";
@@ -22,5 +23,7 @@
 @import "./components/publications-section";
 @import "./components/card";
 @import "./components/footer";
+@import "./components/modals.scss";
+@import "./components/form.scss";
 
 

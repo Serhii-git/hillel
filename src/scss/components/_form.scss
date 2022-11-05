@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__title {
+    margin-bottom: 30px;
+    background-image: var(--color-garient-red-text);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__top {
+    margin-bottom: 30px;
+  }
+
+  &__bottom {
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    display: block;
+    @include mb(15px);
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px;
+    background: var(--color-light);
+    border-radius: 8px;
+    line-height: 26px;
+    border: 2px solid transparent;
+    &:focus {
+      border: 2px solid red;
+    }
+
+    &::placeholder {
+      color: var(--color-text);
+    }
+  }
+
+  &__textarea {
+    height: 130px;
+    resize: none;
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
+}
+
