@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+
+  &__item {
+    @include mr(10px);
+  }
+
+  &__link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__link--fb {
+    background-image: url(../img/svg/facebook.svg);
+  }
+
+  &__link--tg {
+    background-image: url(../img/svg/telegram.svg);
+  }
+
+  &__link--ld {
+    background-image: url(../img/svg/linkedIn.svg);
+  }
+}

@@ -5,7 +5,41 @@
 
 <body class="page__body">
   <div class="site-container">
-    @include('partials/header-decor.html')
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo decor">
+          <a href="index.html" class="logo">
+            <img loading="lazy" src="img/logo-light.svg" class="image" width="130" height="60" alt="Hlegal">
+          </a>
+          <p class="decor__text">sevices</p>
+        </div>
+        <div class="header__right">
+          <div class="header__right-info right-info">
+            <div class="list-reset right-info__language-list">
+              <a href="#" class="right-info__language-link" aria-label="Ukrainian language">Ук</a>
+              <a href="#" class="right-info__language-link" aria-label="Russian language">Ру</a>
+              <a href="#" class="right-info__language-link right-info__language-link--active" aria-label="English language">En</a>
+            </div>
+            <div class="right-info__address our-address" aria-label="Our address">
+              <p>Kyiv, Mechnikova str, 14/1</p>
+            </div>
+            <a href="tel:0800211927" class="right-info__tel our-tel" aria-label="Our phone">0800 211 927</a>
+            <a href="faceboock.com"><svg class="right-info__social" aria-label="Our Facebook page">
+                <use xlink:href="img/sprite.svg#fb-header"></use>
+              </svg></a>
+          </div>
+          <nav class="nav" title="Main menu">
+            <ul class="list-reset nav__list">
+              <li class="nav__item"><a href="about-us" class="nav__link nav-link__active">about us</a></li>
+              <li class="nav__item"><a href="services.html" class="nav__link">services</a></li>
+              <li class="nav__item"><a href="team.html" class="nav__link">team</a></li>
+              <li class="nav__item"><a href="publications.html" class="nav__link">publication</a></li>
+              <li class="nav__item"><a href="contacts.html" class="nav__link">contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     <main class="main">
       <div class="background">
         <div class="services-page__container">
@@ -72,7 +106,78 @@
           <img loading="lazy" src="img/shadow.jpg">
         </picture>
       </div>
-      @include('partials/publications-section.html')
+      <section class="publications-section">
+        <div class="container publications-section__container">
+          <ul class="breadcrumbs publications-section__breadcrumbs list-reset">
+            <li class="breadcrumbs__item">
+              <a href="publications.html" class="breadcrumbs__link">Publications</a>
+            </li>
+          </ul>
+          <h2 class="publications-section__title section-title">Recommended</h2>
+          <div class="publications-section__info">
+            <article class="card">
+              <div class="card__header">
+                <figure class="card__figure">
+                  <picture>
+                    <source srcset="img/publication-1.avif" type="image/avif">
+                    <source srcset="img/publication-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/publication-1.jpg" class="image card__image" width="513" height="200" alt="Publication-1">
+                  </picture>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h4 class="card__title"><a href="publication-entry.html">Equity associate</a></h4>
+                <time class="card__time" datetime="2022-04-22">April 22</time>
+                <p class="card__copy">
+                  I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…
+                </p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <figure class="card__figure">
+                  <picture>
+                    <source srcset="img/publication-2.avif" type="image/avif">
+                    <source srcset="img/publication-2.webp" type="image/webp">
+                    <img loading="lazy" src="img/publication-2.jpg" class="image card__image" width="513" height="200" alt="Publication-2">
+                  </picture>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h4 class="card__title"><a href="publication-entry.html">Penalty for the Good Corporation: what will happen to Google and
+                    others for violating
+                    the GDPR</a></h4>
+                <time class="card__time" datetime="2022-09-29">September 29</time>
+                <p class="card__copy">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January
+                  21
+                  National Commission for
+                  Data Protection.
+                </p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <figure class="card__figure">
+                  <picture>
+                    <source srcset="img/publication-3.avif" type="image/avif">
+                    <source srcset="img/publication-3.webp" type="image/webp">
+                    <img loading="lazy" src="img/publication-3.jpg" class="image card__image" width="513" height="200" alt="Publication-3">
+                  </picture>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h4 class="card__title"><a href="publication-entry.html">Millennial Testament</a></h4>
+                <time class="card__time" datetime="2022-08-19">August 19</time>
+                <p class="card__copy">
+                  What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian
+                  generation
+                  X looks like this: an apartment in…
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
     <div class="background-gray">
       @include('partials/footer.html')

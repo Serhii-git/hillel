@@ -107,5 +107,9 @@
     font-size: 36px;
     line-height: 44px;
     color: var(--color-light);
+    &--light {
+      color: var(--color-main);
+    }
   }
 }
+

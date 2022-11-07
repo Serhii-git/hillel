@@ -26,6 +26,10 @@
       line-height: 20px;
       font-weight: 700;
       color: var(--color-active-regular);
+      transition: color 0.3s;
+      &:hover {
+        color: var(--color-accent);
+      }
     }
   }
 

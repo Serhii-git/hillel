@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header header-light">
+      <div class="container header__container">
+        <div class="header__logo decor--light">
+          <a href="index.html" class="logo">
+            <img loading="lazy" src="img/logo.svg" class="image" width="130" height="60" alt="Hlegal">
+          </a>
+          <p class="decor__text decor__text--light">team</p>
+        </div>
+        <div class="header__right">
+          <div class="header__right-info right-info">
+            <div class="list-reset right-info__language-list">
+              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Ukrainian language">Ук</a>
+              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Russian language">Ру</a>
+              <a href="#"
+                class="right-info__language-link right-info__language-link--light right-info__language-link--active right-info__language-link--light--active"
+                aria-label="English language">En</a>
+            </div>
+            <div class="right-info__address our-address" aria-label="Our address">
+              <p>Kyiv, Mechnikova str, 14/1</p>
+            </div>
+            <a href="tel:0800211927" class="right-info__tel our-tel" aria-label="Our phone">0800 211 927</a>
+            <a href="faceboock.com"><svg class="right-info__social" aria-label="Our Facebook page">
+                <use xlink:href="img/sprite.svg#fb-header"></use>
+              </svg></a>
+          </div>
+          <nav class="nav" title="Main menu">
+            <ul class="list-reset nav__list">
+              <li class="nav__item"><a href="about-us.html" class="nav__link nav-link__active nav-link__active--light">about us</a></li>
+              <li class="nav__item"><a href="services.html" class="nav__link nav__link--light">services</a></li>
+              <li class="nav__item"><a href="team.html" class="nav__link nav__link--light">team</a></li>
+              <li class="nav__item"><a href="publications.html" class="nav__link nav__link--light">publication</a></li>
+              <li class="nav__item"><a href="contacts.html" class="nav__link nav__link--light">contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="team">
+        <div class="container team__container">
+          <h1 class="team__title section-title centered">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+            вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h1>
+          <div class="team__grid">
+            <a href="#" class="team__item item-team">
+              <div class="item-team__image">
+                <picture>
+                  <source srcset="img/team-1.avif" type="image/avif">
+                  <source srcset="img/team-1.webp" type="image/webp">
+                  <img loading="lazy" src="img/team-1.jpg" class="image" alt="Team image 1">
+                </picture>
+              </div>
+              <div class="item-team__descr">
+                <div class="item-team__author">Alexander Alexandrovsky</div>
+                <div class="item-team__author-post">Managing partner</div>
+              </div>
+            </a>
+            <a href="#" class="team__item item-team">
+              <div class="item-team__image">
+                <picture>
+                  <source srcset="img/team-2.avif" type="image/avif">
+                  <source srcset="img/team-2.webp" type="image/webp">
+                  <img loading="lazy" src="img/team-2.jpg" class="image" alt="Team image 1">
+                </picture>
+              </div>
+              <div class="item-team__descr">
+                <div class="item-team__author">Evgeny Patrikov</div>
+                <div class="item-team__author-post">Equity partner, Attorney-at-law</div>
+              </div>
+            </a>
+            <a href="#" class="team__item item-team">
+              <div class="item-team__image">
+                <picture>
+                  <source srcset="img/team-3.avif" type="image/avif">
+                  <source srcset="img/team-3.webp" type="image/webp">
+                  <img loading="lazy" src="img/team-3.jpg" class="image" alt="Team image 1">
+                </picture>
+              </div>
+              <div class="item-team__descr">
+                <div class="item-team__author">Vladislav Melnik</div>
+                <div class="item-team__author-post">Associate</div>
+              </div>
+            </a>
+            <a href="#" class="team__item item-team">
+              <div class="item-team__image">
+                <picture>
+                  <source srcset="img/team-4.avif" type="image/avif">
+                  <source srcset="img/team-4.webp" type="image/webp">
+                  <img loading="lazy" src="img/team-4.jpg" class="image" alt="Team image 1">
+                </picture>
+              </div>
+              <div class="item-team__descr">
+                <div class="item-team__author">Sergey Binn</div>
+                <div class="item-team__author-post">Associate</div>
+              </div>
+            </a>
+            <a href="#" class="team__item item-team">
+              <div class="item-team__image">
+                <picture>
+                  <source srcset="img/team-5.avif" type="image/avif">
+                  <source srcset="img/team-5.webp" type="image/webp">
+                  <img loading="lazy" src="img/team-5.jpg" class="image" alt="Team image 1">
+                </picture>
+              </div>
+              <div class="item-team__descr">
+                <div class="item-team__author">Oksana Kobzar</div>
+                <div class="item-team__author-post">Equity partner, Attorney-at-law</div>
+              </div>
+            </a>
+            <a href="#" class="team__item item-team">
+              <div class="item-team__image">
+                <picture>
+                  <source srcset="img/team-6.avif" type="image/avif">
+                  <source srcset="img/team-6.webp" type="image/webp">
+                  <img loading="lazy" src="img/team-6.jpg" class="image" alt="Team image 1">
+                </picture>
+              </div>
+              <div class="item-team__descr">
+                <div class="item-team__author">Julia Wolk</div>
+                <div class="item-team__author-post">Associate, Attorney-at-law</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="background-gray">
+      @include('partials/footer.html')
+    </div>
+  </div>
+</body>
+
+</html>

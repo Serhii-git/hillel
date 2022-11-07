@@ -1,9 +1,10 @@
 .publications-section {
+  background: var(--color-bg);
   &__container {
-    padding-top: 30px;
-
+    padding: 30px 15px 48px;
+    // overflow: hidden;
     @include big-desktop {
-     margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -16,11 +17,34 @@
   }
 
   &__info {
+    margin-bottom: 48px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
+
+  &__btn {
+    text-align: center;
+  }
+
+  &__filter {
+    margin: 0 auto 30px;
+  }
 }
 
-.image {
+.filter {
+  width: 225px;
+  padding: 2px;
+  background: var(--color-separator);
+  border-radius: 12px;
+  &__btn {
+    padding: 8px 30px 10px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--color-main);
+    border-radius: 10px;
+    &--active {
+      background: var(--color-light);
+    }
+  }
 }

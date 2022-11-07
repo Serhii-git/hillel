@@ -30,9 +30,34 @@
       }
     }
   }
+
+  &__link--light {
+    color: var(--color-active-regular);
+    &::after {
+      background-color: var(--color-active-regular);
+    }
+  }
 }
 
 .nav-link__active {
   border-bottom: 2px solid var(--color-accent);
   color: var(--color-accent);
+
+  &--light {
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: var(--color-active-regular);
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -2px;
+      transition: 0.3s;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
 }

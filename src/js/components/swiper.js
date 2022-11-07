@@ -1,6 +1,6 @@
 import Swiper, { Pagination, Autoplay } from 'swiper';
 Swiper.use([Pagination, Autoplay]);
-const swiper = new Swiper('.team-swiper', {
+const swiper = new Swiper('.team-section-swiper', {
   // autoplay: {
   //   delay: 3000,
   // },

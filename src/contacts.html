@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header header-light">
+      <div class="container header__container">
+        <div class="header__logo decor--light">
+          <a href="index.html" class="logo">
+            <img loading="lazy" src="img/logo.svg" class="image" width="130" height="60" alt="Hlegal">
+          </a>
+          <p class="decor__text decor__text--light">contacts</p>
+        </div>
+        <div class="header__right">
+          <div class="header__right-info right-info">
+            <div class="list-reset right-info__language-list">
+              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Ukrainian language">Ук</a>
+              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Russian language">Ру</a>
+              <a href="#" class="right-info__language-link right-info__language-link--light right-info__language-link--active right-info__language-link--light--active" aria-label="English language">En</a>
+            </div>
+            <div class="right-info__address our-address" aria-label="Our address">
+              <p>Kyiv, Mechnikova str, 14/1</p>
+            </div>
+            <a href="tel:0800211927" class="right-info__tel our-tel" aria-label="Our phone">0800 211 927</a>
+            <a href="faceboock.com"><svg class="right-info__social" aria-label="Our Facebook page">
+                <use xlink:href="img/sprite.svg#fb-header"></use>
+              </svg></a>
+          </div>
+          <nav class="nav" title="Main menu">
+            <ul class="list-reset nav__list">
+              <li class="nav__item"><a href="about-us.html" class="nav__link nav-link__active nav-link__active--light">about us</a></li>
+              <li class="nav__item"><a href="services.html" class="nav__link nav__link--light">services</a></li>
+              <li class="nav__item"><a href="team.html" class="nav__link nav__link--light">team</a></li>
+              <li class="nav__item"><a href="publications.html" class="nav__link nav__link--light">publication</a></li>
+              <li class="nav__item"><a href="contacts.html" class="nav__link nav__link--light">contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="contacts section-offset">
+        <div class="container contacts__container">
+          <div class="contacts__left left-contacts">
+            <div class="left-contacts__address our-address">
+              <ul class="list-reset our-address__list">
+                <li class="our-address__item">Kyiv,</li>
+                <li class="our-address__item">Mechnikova str, 14</li>
+              </ul>
+              <ul class="list-reset our-contacts__list">
+                <li class="our-contacts__item"><a href="tel:0800211927" class="our-contacts__tel our-tel" aria-label="Our phone">0800 211
+                    927</a></li>
+                <li class="our-contacts__item"><a href="mailto:contact@forstudy.space"
+                    class="our-contacts__email our-email">contact@forstudy.space
+                  </a></li>
+              </ul>
+              <a href="#" class="left-contacts__social">
+                <svg class="left-contacts__social-icon" aria-label="Our Facebook page">
+                  <use xlink:href="img/sprite.svg#fb-footer"></use>
+                </svg>
+                <div class="left-contacts__social-text">Our page <br> on facebook</div>
+              </a>
+
+
+            </div>
+          </div>
+          <div class="contacts__right right-contacts">
+            <form action="#" class="form right-contacts__form">
+              <h2 class="form__title section-title">We would like to help you</h2>
+              <div class="form__top">
+                <label class="form__label">
+                  <input type="text" name="Name" class="input-reset form__input input-name" required placeholder="Name">
+                </label>
+                <textarea name="Message" class="input-reset form__input form__textarea" placeholder="Message"></textarea>
+              </div>
+              <div class="form__bottom">
+                <h3 class="form__subtitle">How to answer you?</h3>
+                <label class="form__label">
+                  <input type="tel" name="Tel" class="input-reset form__input input-tel" required placeholder="Phone number">
+                </label>
+                <label class="form__label">
+                  <input type="email" name="Email" class="input-reset form__input" required placeholder="Email">
+                </label>
+              </div>
+              <button class="btn-reset btn form__btn">Send message</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <div class="background-gray">
+      @include('partials/footer.html')
+    </div>
+  </div>
+</body>
+
+</html>
