@@ -1,0 +1,157 @@
+.legal-services {
+  &__container {
+    max-width: 1360px;
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    margin-right: 30px;
+    max-width: 662px;
+  }
+
+  &__right {
+    border-left: 4px solid var(--color-separator);
+  }
+}
+
+.left-legal {
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background-image: var(--color-garient-red-text);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    @include mb(15px);
+    font-size: 19px;
+    line-height: 30px;
+    color: var(--color-dark);
+  }
+}
+
+.right-legal {
+  &__list {
+    padding-left: 30px;
+  }
+
+  &__item {
+    @include mb(40px);
+    line-height: 20px;
+  }
+}
+
+.gradient {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 33px;
+  background-image: var(--color-garient-red-text);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.team-picture {
+  &__container {
+    position: relative;
+    max-width: 1920px;
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 117px;
+    text-align: center;
+    letter-spacing: 63px;
+    text-transform: uppercase;
+    color: var(--color-light);
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+  }
+}
+
+.quality {
+  &__container {
+    max-width: 1360px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    margin-right: 60px;
+    max-width: 938px;
+  }
+
+  &__right {
+  }
+}
+
+.left-quality {
+  &__list {
+  }
+
+  &__item {
+    @include mb(15px);
+    font-size: 19px;
+    line-height: 30px;
+    color: var(--color-dark);
+  }
+}
+
+.right-quality {
+  &__title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background-image: var(--color-garient-red-text);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.achievements {
+  padding-top: 30px;
+  &__container {
+    padding-bottom: 60px;
+    max-width: 1600px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-main);
+  }
+}
+
+.achiements {
+  &__item {
+    width: 370px;
+    text-align: center;
+    padding: 25px 0;
+    background-color: var(--color-light);
+  }
+}
+
+.achievements-swiper {
+
+  &__pagination {
+    margin-bottom: -10px;
+
+
+  }
+}

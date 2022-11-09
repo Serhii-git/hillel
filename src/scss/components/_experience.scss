@@ -5,9 +5,13 @@
     @include big-desktop {
       max-width: 1080px;
     }
-  }
 
+  }
   &__tabs {
     display: flex;
+    @include mobile {
+      display: block;
+    }
   }
+
 }

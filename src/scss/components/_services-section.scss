@@ -4,6 +4,10 @@
     @include big-desktop {
       max-width: 1320px;
     }
+    @include small-tablet {
+      max-width: 648px;
+      margin-top: 60px;
+    }
   }
 
   &__breadcrumbs {
@@ -25,6 +29,9 @@
 
   &__item {
     grid-column: 4 span;
+    @include small-tablet {
+      grid-column: 6 span;
+    }
   }
 
   &__item-image {

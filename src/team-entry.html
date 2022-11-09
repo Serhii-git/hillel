@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header header-light">
+      <div class="container header__container">
+        <div class="header__logo decor--light">
+          <a href="index.html" class="logo">
+            <img loading="lazy" src="img/logo.svg" class="image" width="130" height="60" alt="Hlegal">
+          </a>
+          <p class="decor__text decor__text--light">team</p>
+        </div>
+        <div class="header__right">
+          <div class="header__right-info right-info">
+            <div class="list-reset right-info__language-list">
+              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Ukrainian language">Ук</a>
+              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Russian language">Ру</a>
+              <a href="#"
+                class="right-info__language-link right-info__language-link--light right-info__language-link--active right-info__language-link--light--active"
+                aria-label="English language">En</a>
+            </div>
+            <div class="right-info__address our-address" aria-label="Our address">
+              <p>Kyiv, Mechnikova str, 14/1</p>
+            </div>
+            <a href="tel:0800211927" class="right-info__tel our-tel" aria-label="Our phone">0800 211 927</a>
+            <a href="faceboock.com"><svg class="right-info__social" aria-label="Our Facebook page">
+                <use xlink:href="img/sprite.svg#fb-header"></use>
+              </svg></a>
+          </div>
+          <nav class="nav" title="Main menu">
+            <ul class="list-reset nav__list">
+              <li class="nav__item"><a href="about.html" class="nav__link nav-link__active nav-link__active--light">about us</a></li>
+              <li class="nav__item"><a href="services.html" class="nav__link nav__link--light">services</a></li>
+              <li class="nav__item"><a href="team.html" class="nav__link nav__link--light">team</a></li>
+              <li class="nav__item"><a href="publications.html" class="nav__link nav__link--light">publication</a></li>
+              <li class="nav__item"><a href="contacts.html" class="nav__link nav__link--light">contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="team-entry">
+        <div class="container team-entry__container">
+          <div class="team-entry__left">
+            <div class="left__image">
+              <picture>
+                <source srcset="img/team-5.avif" type="image/avif">
+                <source srcset="img/team-5.webp" type="image/webp">
+                <img loading="lazy" src="img/team-5.jpg." class="image" width="" height="" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="team-entry__right">
+            <div class="right__employee-name">
+              <h1 class="right__title">Oksana Kobzar</h1>
+              <ul class="right__list-employee list-reset">
+                <li class="right__item-employee">
+                  <span>Equity partner, Attorney-at-law</span>
+                </li>
+                <li class="right__item-employee">
+                  <a href="mailto:contact@forstudy.space" class="right__link-employee">kobzar@forstudy.space</a>
+                </li>
+                <li class="right__item-employee">
+                  <a href="#" class="right__link-employee">LinkedIn profile</a>
+                </li>
+              </ul>
+            </div>
+            <div class="right__employee-descr">
+              <ul class="right__text-list list-reset">
+                <li class="right__text-item">Oksana heads the practice of international trade and shipping. He specializes in resolving
+                  disputes related to the purchase and sale of raw materials and transportation of goods by sea.</li>
+                <li class="right__text-item">Desis represents the interests of shipowners, freight forwarders, cargo owners, shipping
+                  agents, container lines, as well as international banks and P&I clubs.</li>
+              </ul>
+              <div class="right__employee-education">
+                <h3 class="right__subtitle">Education</h3>
+                <p>National University "Odessa Law Academy", Master of Law.</p>
+              </div>
+              <div class="right__employee-experience">
+                <h3 class="right__subtitle">Experience</h3>
+                <p>Her professional experience includes resolving disputes under English law and representing interests in foreign commercial arbitrations such as GAFTA, FOSFA and LMAA. Danilo also represents the interests of clients in the state courts of Ukraine on similar disputes, as well as in the ICAC and IAC at the CCI of Ukraine</p>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </section>
+    </main>
+    <div class="background-gray">
+      @include('partials/footer.html')
+    </div>
+  </div>
+</body>
+
+</html>

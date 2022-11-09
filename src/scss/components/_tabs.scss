@@ -11,11 +11,24 @@
       margin-top: 0;
       margin-bottom: 0;
     }
+    @include small-tablet {
+      margin-right: 20px;
+    }
+    @include mobile {
+      margin-right: 0;
+      max-width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__nav-item {
-   @include mb(30px);
+    @include mb(30px);
+    @include mobile {
+      @include mr(15px);
+     margin-bottom: 30px;
 
+    }
   }
 
   &__nav-btn {
@@ -37,6 +50,13 @@
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    @include small-tablet {
+      font-size: 30px;
+      line-height: 1;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
   }
 
   &__content {
@@ -56,6 +76,22 @@
     @include big-desktop {
       max-width: 580px;
     }
+    @include tablet {
+      max-width: 450px;
+    }
+    @include small-tablet {
+      max-width: 350px;
+      ::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: -40px;
+        width: 4px;
+        height: 100%;
+        background-color: var(--color-light);
+        opacity: 0.3;
+      }
+    }
   }
 
   &__panel {
@@ -70,6 +106,9 @@
     color: var(--color-light);
     @include big-desktop {
       padding-top: 43px;
+    }
+    @include small-tablet {
+      padding-top: 0;
     }
   }
 

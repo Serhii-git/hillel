@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header header-light">
+      <div class="container header__container">
+        <div class="header__logo decor--light">
+          <a href="index.html" class="logo">
+            <img loading="lazy" src="img/logo.svg" class="image" width="130" height="60" alt="Hlegal">
+          </a>
+          <p class="decor__text decor__text--light">publications</p>
+        </div>
+        <div class="header__right">
+          <div class="header__right-info right-info">
+            <div class="list-reset right-info__language-list">
+              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Ukrainian language">Ук</a>
+              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Russian language">Ру</a>
+              <a href="#"
+                class="right-info__language-link right-info__language-link--light right-info__language-link--active right-info__language-link--light--active"
+                aria-label="English language">En</a>
+            </div>
+            <div class="right-info__address our-address" aria-label="Our address">
+              <p>Kyiv, Mechnikova str, 14/1</p>
+            </div>
+            <a href="tel:0800211927" class="right-info__tel our-tel" aria-label="Our phone">0800 211 927</a>
+            <a href="faceboock.com"><svg class="right-info__social" aria-label="Our Facebook page">
+                <use xlink:href="img/sprite.svg#fb-header"></use>
+              </svg></a>
+          </div>
+          <nav class="nav" title="Main menu">
+            <ul class="list-reset nav__list">
+              <li class="nav__item"><a href="about.html.html" class="nav__link nav-link__active nav-link__active--light">about us</a></li>
+              <li class="nav__item"><a href="services.html" class="nav__link nav__link--light">services</a></li>
+              <li class="nav__item"><a href="team.html" class="nav__link nav__link--light">team</a></li>
+              <li class="nav__item"><a href="publications.html" class="nav__link nav__link--light">publication</a></li>
+              <li class="nav__item"><a href="contacts.html" class="nav__link nav__link--light">contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-offset legal-services">
+        <div class="container legal-services__container">
+          <div class="legal-services__left left-legal">
+            <h1 class="left-legal__title">We turn over the idea of legal services</h1>
+            <ul class="left-legal__list list-reset">
+              <li class="left-legal__item">Consolidating many years of experience and practice, the company's lawyers accompany complex
+                projects and achieve the adoption of a number of decisions that are important for the industry. Many people form the
+                practice of applying the law of the sea in Ukraine.</li>
+              <li class="left-legal__item">HLEGAL is a reliable business partner, confirmed by stable cooperation with international law
+                firms, the trust of large Ukrainian and international companies, and the recognition of professional ratings.</li>
+            </ul>
+          </div>
+          <div class="legal-services__right right-legal">
+            <ul class="right-legal__list list-reset">
+              <li class="right-legal__item">
+                <img loading="lazy" src="img/experience.svg" class="image" width="32" height="32" alt="Years of relevant experience">
+                <span class="gradient">10+</span>
+                <p>years of relevant experience</p>
+              </li>
+              <li class="right-legal__item">
+                <img loading="lazy" src="img/clients.svg" class="image" width="32" height="32" alt="Active clients">
+                <span class="gradient">30+</span>
+                <p>active clients who entrust us with their orders on a monthly basis</p>
+              </li>
+              <li class="right-legal__item">
+                <img loading="lazy" src="img/probono.svg" class="image" width="32" height="32" alt="Hours of pro bono work annually">
+                <span class="gradient">500+</span>
+                <p>hours of pro bono work annually</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="container team-picture__container section-offset">
+        <picture>
+          <source srcset="img/team.avif" type="image/avif">
+          <source srcset="img/team.webp" type="image/webp">
+          <img loading="lazy" src="img/team.jpg." class="image" width="1920" height="" alt="584">
+        </picture>
+        <div class="team-picture__text">
+          <p>Team</p>
+        </div>
+      </div>
+      <section class="section-offset quality">
+        <div class="container quality__container">
+          <div class="quality__left left-quality">
+            <ul class="left-quality__list list-reset">
+              <li class="left-quality__item">The historically unchanged legal profession has begun to reformat in recent years. Clients are
+                feeling this, but law firms are still resisting evolution. Clients need convenience, simplicity, transparent payment.
+                Google, IBM WatsOn, Symantec Clearwell prove that the technological revolution in legal services has begun and is imminent.
+              </li>
+              <li class="left-quality__item">Quality is what we care about the most.</li>
+              <li class="left-quality__item">It's simple. If you are unhappy with our work, we will refund your money. We trust our clients.
+                And we want our clients to trust us too.</li>
+            </ul>
+          </div>
+          <div class="quality__right right-quality">
+            <h2 class="right-quality__title">Quality is what we care about the most.</h2>
+          </div>
+        </div>
+      </section>
+      <div class="background-gray">
+        <section class="achievements">
+          <div class="container achievements__container">
+            <h3 class="achievements__title">Achievements</h3>
+            <div class="swiper achievements-swiper">
+              <div class="swiper-wrapper achievements-swiper__wrapper">
+                <div class="swiper-slide">
+                  <div class="achiements__item">
+                    <picture>
+                      <source srcset="img/achievment-1.avif" type="image/avif">
+                      <source srcset="img/achievment-1.webp" type="image/webp">
+                      <img loading="lazy" src="img/achievment-1.jpg." class="image" width="80" height="60" alt="Legal">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="achiements__item">
+                    <picture>
+                      <source srcset="img/achievment-2.avif" type="image/avif">
+                      <source srcset="img/achievment-2.webp" type="image/webp">
+                      <img loading="lazy" src="img/achievment-2.jpg." class="image" width="159" height="60" alt="Loyer">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="achiements__item">
+                    <picture>
+                      <source srcset="img/achievment-3.avif" type="image/avif">
+                      <source srcset="img/achievment-3.webp" type="image/webp">
+                      <img loading="lazy" src="img/achievment-3.jpg." class="image" width="195" height="60" alt="Liders">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="achiements__item">
+                    <picture>
+                      <source srcset="img/achievment-4.avif" type="image/avif">
+                      <source srcset="img/achievment-4.webp" type="image/webp">
+                      <img loading="lazy" src="img/achievment-4.jpg." class="image" width="166" height="60" alt="Uif2017">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination achievements-swiper__pagination"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+  </div>
+  <div class="background-gray">
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>
