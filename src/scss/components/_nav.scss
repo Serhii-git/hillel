@@ -2,6 +2,10 @@
   &__list {
     display: flex;
     justify-content: flex-end;
+    @include small-tablet {
+      margin-left: 5px;
+      justify-content: flex-start;
+    }
   }
 
   &__item {
@@ -37,6 +41,9 @@
       background-color: var(--color-active-regular);
     }
   }
+  @include mobile {
+    display: none;
+  }
 }
 
 .nav-link__active {
@@ -60,4 +67,13 @@
       }
     }
   }
+}
+
+.burger {
+  @include burger;
+
+  
+}
+
+.menu--active {
 }

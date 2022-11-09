@@ -3,6 +3,9 @@
     @include big-desktop {
       max-width: 1320px;
     }
+    @include small-tablet {
+      max-width: 648px;
+    }
   }
 }
 
@@ -16,7 +19,10 @@
     justify-content: center;
     border-radius: 12px;
     background-color: var(--color-bg);
-    //margin-bottom: 45px;
+
+    @include small-tablet {
+      display: block;
+    }
   }
 
   &__image {
@@ -25,6 +31,15 @@
     .image {
       object-fit: cover;
       border-radius: 12px 0 0 12px;
+    }
+    @include small-tablet {
+      margin: 0 auto;
+      flex: 0 0 auto;
+      .image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
     }
   }
 

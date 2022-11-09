@@ -27,9 +27,12 @@
   margin-right: 18px;
   font-size: 16px;
   line-height: 20px;
-  color: var(--color-light);
+  color: var(--color-text);
   &--dark {
     color: var(--color-main);
+  }
+  &--light {
+    color: var(--color-light);
   }
   &::after {
     position: absolute;
@@ -49,9 +52,12 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: var(--color-light);
+  color: var(--color-text);
   &--dark {
     color: var(--color-main);
+  }
+  &--light {
+    color: var(--color-light);
   }
   &::after {
     position: absolute;
@@ -63,6 +69,12 @@
     right: -12px;
     background-color: var(--color-separator);
     cursor: auto;
+  }
+  @include mobile {
+    margin-right: 0;
+    &::after {
+      display: none;
+    }
   }
 }
 

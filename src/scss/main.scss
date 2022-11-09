@@ -7,18 +7,19 @@
 
 // подключения компонентов страницы
 @import "./components/header";
-@import "./components/header-light";
 @import "./components/breadcrumbs";
 @import "./components/nav";
 @import "./components/tabs";
 @import "./components/card";
 @import "./components/hero";
+@import "./components/about";
 @import "./components/experience";
 @import "./components/services";
 @import "./components/services-section";
 @import "./components/services-it-and-e-commers";
 @import "./components/team-section";
 @import "./components/team";
+@import "./components/team-entry";
 @import "./components/swiper";
 @import "./components/clients";
 @import "./components/contacts";
@@ -29,5 +30,4 @@
 @import "./components/modals.scss";
 @import "./components/form.scss";
 @import "./components/social.scss";
-
 
