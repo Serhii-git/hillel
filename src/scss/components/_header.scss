@@ -163,6 +163,7 @@
   }
 
   &__tel {
+    color: var(--color-text);
   }
 
   &__social {
@@ -187,7 +188,11 @@
     @include mobile {
       display: none;
     }
+    &--light {
+      fill: var(--color-light);
+    }
   }
+
 }
 
 .decor {
