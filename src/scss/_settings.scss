@@ -20,6 +20,11 @@
   font-size: var(--title-hero-fz);
   line-height: 46px;
   color: var(--color-accent);
+
+  @include mobile {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .our-address {
@@ -43,6 +48,9 @@
     top: 6px;
     right: -12px;
     background-color: var(--color-separator);
+  }
+  @include mobile {
+    margin-right: 0;
   }
 }
 

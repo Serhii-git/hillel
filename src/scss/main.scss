@@ -1,11 +1,9 @@
-// базовые подключения
 @import "vars";
 @import "mixins";
 @import "fonts";
 @import "global-settings";
 @import "settings";
 
-// подключения компонентов страницы
 @import "./components/header";
 @import "./components/breadcrumbs";
 @import "./components/nav";

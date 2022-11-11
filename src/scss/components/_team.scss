@@ -3,6 +3,15 @@
     max-width: 1600px;
     margin-top: 170px;
     margin-bottom: 60px;
+
+    @include small-tablet {
+      max-width: 750px;
+      margin-top: 230px;
+    }
+
+    @include mobile {
+      margin-top: 110px;
+    }
   }
 
   &__title {
@@ -11,12 +20,28 @@
     background-image: var(--color-garient-red-text);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include tablet {
+      text-align: left;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
@@ -35,7 +60,7 @@
     background-image: url(../img/more.svg);
     &:hover {
       background-image: url(../img/more-hover.svg);
-  }
+    }
   }
 
   &__author {
@@ -45,7 +70,7 @@
     color: var(--color-main);
     transition: color 0.3s;
     &:hover {
-        color: var(--color-accent);
+      color: var(--color-accent);
     }
   }
 
@@ -53,12 +78,5 @@
     font-size: 14px;
     line-height: 22px;
     color: var(--color-text);
-  }
-  a{
-    &:hover {
-      &__author {
-        color: var(--color-accent);
-      }
-    }
   }
 }

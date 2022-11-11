@@ -7,14 +7,21 @@
     @include small-tablet {
       max-width: 648px;
       margin-top: 60px;
+      padding: 0;
+    }
+
+    @include mobile {
+      padding: 0 10px;
     }
   }
-
   &__breadcrumbs {
     margin-bottom: 10px;
   }
 
   &__info {
+    @include mobile {
+      padding: 0 10px;
+    }
   }
 
   &__title {
@@ -25,12 +32,23 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 60px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__item {
     grid-column: 4 span;
     @include small-tablet {
-      grid-column: 6 span;
+      grid-column: 3 span;
+    }
+
+    @include mobile {
+      grid-column: 1 span;
     }
   }
 
@@ -66,4 +84,3 @@
     color: var(--color-light);
   }
 }
-

@@ -31,7 +31,7 @@
     line-height: 26px;
     border: 2px solid transparent;
     &:focus {
-      border: 2px solid red;
+      border: 2px solid var(--color-main);
     }
 
     &::placeholder {
@@ -55,3 +55,6 @@
   }
 }
 
+.just-validate-error-label {
+  color: var(--color-accent) !important;
+}

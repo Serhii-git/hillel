@@ -15,16 +15,22 @@
         </div>
         <div class="header__right">
           <div class="header__right-info right-info">
-            <div class="right-info__language-list">
-              <a href="#" class="right-info__language-link" aria-label="Ukrainian language">Ук</a>
-              <a href="#" class="right-info__language-link" aria-label="Russian language">Ру</a>
-              <a href="#" class="right-info__language-link right-info__language-link--active" aria-label="English language">En</a>
-            </div>
-            <div class="right-info__address our-address" aria-label="Our address">
+            <ul class="list-reset right-info__language-list">
+              <li class="right-info__language-item">
+                <a href="#" class="right-info__language-link" aria-label="Ukrainian language">Ук</a>
+              </li>
+              <li class="right-info__language-item">
+                <a href="#" class="right-info__language-link" aria-label="Russian language">Ру</a>
+              </li>
+              <li class="right-info__language-item">
+                <a href="#" class="right-info__language-link right-info__language-link--active" aria-label="English language">En</a>
+              </li>
+            </ul>
+            <div class="right-info__address our-address our-address--light">
               <p>Kyiv, Mechnikova str, 14/1</p>
             </div>
-            <a href="tel:0800211927" class="right-info__tel our-tel" aria-label="Our phone">0800 211 927</a>
-            <a href="faceboock.com" class="right-info__social" aria-label="Our Facebook page">
+            <a href="tel:0800211927" class="right-info__tel our-tel our-tel--light" aria-label="Our phone">0800 211 927</a>
+            <a href="https://m.facebook.com/" target="_blank" class="right-info__social right-info__social--light" aria-label="Our Facebook page">
               <svg>
                 <use xlink:href="img/sprite.svg#fb-header"></use>
               </svg>
@@ -105,7 +111,7 @@
         <picture>
           <source srcset="img/shadow.avif" type="image/avif">
           <source srcset="img/shadow.webp" type="image/webp">
-          <img loading="lazy" src="img/shadow.jpg">
+          <img loading="lazy" src="img/shadow.jpg" alt="block-shadow">
         </picture>
       </div>
       <section class="publications-section">

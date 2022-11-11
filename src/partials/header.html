@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" data-aos="zoom-in-down" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-duration="1000">
   <div class="container header__container">
     <div class="header__logo-wrapper">
       <div class="header__logo">
@@ -13,25 +13,32 @@
     <div class="header__right">
       <div class="header__right-info right-info">
         <ul class="list-reset right-info__language-list">
-          <a href="#" class="right-info__language-link" aria-label="Ukrainian language">Ук</a>
-          <a href="#" class="right-info__language-link" aria-label="Russian language">Ру</a>
-          <a href="#" class="right-info__language-link right-info__language-link--active" aria-label="English language">En</a>
+          <li class="right-info__language-item">
+            <a href="#" class="right-info__language-link" aria-label="Ukrainian language">Ук</a>
+          </li>
+          <li class="right-info__language-item">
+            <a href="#" class="right-info__language-link" aria-label="Russian language">Ру</a>
+          </li>
+          <li class="right-info__language-item">
+            <a href="#" class="right-info__language-link right-info__language-link--active" aria-label="English language">En</a>
+          </li>
         </ul>
         <div class="right-info__address our-address our-address--light" aria-label="Our address">
           <p>Kyiv, Mechnikova str, 14/1</p>
         </div>
         <a href="tel:0800211927" class="right-info__tel our-tel our-tel--light" aria-label="Our phone">0800 211 927</a>
-        <a href="faceboock.com" class="right-info__social right-info__social--light" aria-label="Our Facebook page"><svg>
+        <a href="https://m.facebook.com/" target="_blank" class="right-info__social right-info__social--light"
+          aria-label="Our Facebook page"><svg>
             <use xlink:href="img/sprite.svg#fb-header"></use>
           </svg></a>
       </div>
       <nav class="nav" data-menu title="Main menu">
         <ul class="list-reset nav__list">
-          <li class="nav__item"><a href="about.html" class="nav__link nav-link__active">about us</a></li>
-          <li class="nav__item"><a href="services.html" class="nav__link">services</a></li>
-          <li class="nav__item"><a href="team.html" class="nav__link">team</a></li>
-          <li class="nav__item"><a href="publications.html" class="nav__link">publication</a></li>
-          <li class="nav__item"><a href="contacts.html" class="nav__link">contacts</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link nav-link__active" data-menu-item data-scroll>about us</a></li>
+          <li class="nav__item"><a href="services.html" class="nav__link" data-menu-item data-scroll>services</a></li>
+          <li class="nav__item"><a href="team.html" class="nav__link" data-menu-item data-scroll>team</a></li>
+          <li class="nav__item"><a href="publications.html" class="nav__link" data-menu-item data-scroll>publication</a></li>
+          <li class="nav__item"><a href="contacts.html" class="nav__link" data-menu-item data-scroll>contacts</a></li>
         </ul>
       </nav>
     </div>

@@ -24,6 +24,9 @@
     @include small-tablet {
       grid-template-columns: repeat(3, 1fr);
     }
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item {

@@ -2,6 +2,10 @@
   &__container {
     max-width: 1360px;
     margin-bottom: 30px;
+
+    @include small-tablet {
+      margin-top: 65px;
+    }
   }
 
   &__info {

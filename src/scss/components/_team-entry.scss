@@ -5,16 +5,35 @@
     margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
+
+    @include small-tablet {
+      margin-top: 230px;
+      margin-bottom: 30px;
+    }
+
+    @include mobile {
+      margin-top: 100px;
+      flex-direction: column-reverse;
+    }
   }
 
   &__left {
     margin-right: 60px;
     flex: 0 1 100%;
     max-width: 500px;
+
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__right {
     flex: 0 1 100%;
+  }
+
+  &--small {
+    display: block;
   }
 }
 
@@ -40,6 +59,14 @@
     margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 4px solid var(--color-separator);
+
+    @include tablet {
+      border-bottom: none;
+    }
+
+    @include mobile {
+      padding-bottom: 0;
+    }
   }
 
   &__title {
@@ -54,6 +81,10 @@
 
   &__list-employee {
     display: flex;
+
+    @include tablet {
+      display: block;
+    }
   }
 
   &__item-employee {
@@ -74,14 +105,46 @@
       right: -16px;
       background-color: var(--color-separator);
     }
+    @include tablet {
+      @include mr(0px);
+      @include mb(10px);
+    }
   }
 
   &__link-employee {
     line-height: 20px;
     color: var(--color-active-regular);
+    transition: color 0.3s;
+      &:hover {
+        color: var(--color-accent);
+      }
+
   }
 
   &__employee-descr {
+
+    @include small-tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: block;
+    }
+
+    &--small {
+      display: none;
+
+      @include small-tablet {
+        padding-top: 10px;
+        display: block;
+        max-width: 100%;
+        border-top: 4px solid var(--color-separator);
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
   }
 
   &__text-list {

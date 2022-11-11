@@ -7,38 +7,47 @@
   <div class="site-container">
     <header class="header header-light">
       <div class="container header__container">
-        <div class="header__logo decor--light">
-          <a href="index.html" class="logo">
-            <img loading="lazy" src="img/logo.svg" class="image" width="130" height="60" alt="Hlegal">
-          </a>
-          <p class="decor__text decor__text--light">contacts</p>
+        <div class="header__logo-wrapper">
+          <div class="header__logo decor--light">
+            <a href="index.html" class="logo">
+              <img loading="lazy" src="img/logo.svg" class="image" width="130" height="60" alt="Hlegal">
+            </a>
+            <p class="decor__text decor__text--light">contacts</p>
+          </div>
+          <button class="burger burger--dark" aria-label="Открыть меню" aria-expanded="false" data-burger>
+            <span class="burger__line"></span>
+          </button>
         </div>
         <div class="header__right">
           <div class="header__right-info right-info">
-            <div class="right-info__language-list">
-              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Ukrainian language">Ук</a>
-              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Russian language">Ру</a>
-              <a href="#"
-                class="right-info__language-link right-info__language-link--light right-info__language-link--active right-info__language-link--light--active"
-                aria-label="English language">En</a>
-            </div>
-            <div class="right-info__address our-address" aria-label="Our address">
+            <ul class="list-reset right-info__language-list">
+              <li class="right-info__language-item">
+                <a href="#" class="right-info__language-link" aria-label="Ukrainian language">Ук</a>
+              </li>
+              <li class="right-info__language-item">
+                <a href="#" class="right-info__language-link" aria-label="Russian language">Ру</a>
+              </li>
+              <li class="right-info__language-item">
+                <a href="#" class="right-info__language-link right-info__language-link--active" aria-label="English language">En</a>
+              </li>
+            </ul>
+            <div class="right-info__address our-address">
               <p>Kyiv, Mechnikova str, 14/1</p>
             </div>
             <a href="tel:0800211927" class="right-info__tel our-tel" aria-label="Our phone">0800 211 927</a>
-            <a href="faceboock.com" class="right-info__social" aria-label="Our Facebook page">
+            <a href="https://m.facebook.com/" target="_blank" class="right-info__social" aria-label="Our Facebook page">
               <svg>
                 <use xlink:href="img/sprite.svg#fb-header"></use>
               </svg>
             </a>
           </div>
-          <nav class="nav" title="Main menu">
+          <nav class="nav nav--dark" data-menu title="Main menu">
             <ul class="list-reset nav__list">
-              <li class="nav__item"><a href="about.html" class="nav__link nav-link__active nav-link__active--light">about us</a></li>
-              <li class="nav__item"><a href="services.html" class="nav__link nav__link--light">services</a></li>
-              <li class="nav__item"><a href="team.html" class="nav__link nav__link--light">team</a></li>
-              <li class="nav__item"><a href="publications.html" class="nav__link nav__link--light">publication</a></li>
-              <li class="nav__item"><a href="contacts.html" class="nav__link nav__link--light">contacts</a></li>
+              <li class="nav__item nav__item--dark"><a href="about.html" class="nav__link nav-link__active nav-link__active--light">about us</a></li>
+              <li class="nav__item nav__item--dark"><a href="services.html" class="nav__link nav__link--light">services</a></li>
+              <li class="nav__item nav__item--dark"><a href="team.html" class="nav__link nav__link--light">team</a></li>
+              <li class="nav__item nav__item--dark"><a href="publications.html" class="nav__link nav__link--light">publication</a></li>
+              <li class="nav__item nav__item--dark"><a href="contacts.html" class="nav__link nav__link--light">contacts</a></li>
             </ul>
           </nav>
         </div>
@@ -60,7 +69,7 @@
                     class="our-contacts__email our-email">contact@forstudy.space
                   </a></li>
               </ul>
-              <a href="#" class="left-contacts__social">
+              <a href="https://m.facebook.com/" target="_blank" class="left-contacts__social">
                 <svg class="left-contacts__social-icon" aria-label="Our Facebook page">
                   <use xlink:href="img/sprite.svg#fb-footer"></use>
                 </svg>
@@ -69,21 +78,21 @@
             </div>
           </div>
           <div class="contacts__right right-contacts">
-            <form action="#" class="form right-contacts__form">
+            <form action="#" class="order-form right-contacts__form form" novalidate="novalidate">
               <h2 class="form__title section-title">We would like to help you</h2>
               <div class="form__top">
                 <label class="form__label">
-                  <input type="text" name="Name" class="input-reset form__input input-name" required placeholder="Name">
+                  <input type="text" name="Name" class="input-name input-reset form__input" required placeholder="Name">
                 </label>
                 <textarea name="Message" class="input-reset form__input form__textarea" placeholder="Message"></textarea>
               </div>
               <div class="form__bottom">
                 <h3 class="form__subtitle">How to answer you?</h3>
                 <label class="form__label">
-                  <input type="tel" name="Tel" class="input-reset form__input input-tel" required placeholder="Phone number">
+                  <input type="tel" name="Tel" class="input-tel input-reset form__input" required placeholder="Phone number">
                 </label>
                 <label class="form__label">
-                  <input type="email" name="Email" class="input-reset form__input" required placeholder="Email">
+                  <input type="email" name="Email" class="input-reset form__input input-email" required placeholder="Email">
                 </label>
               </div>
               <button class="btn-reset btn form__btn">Send message</button>

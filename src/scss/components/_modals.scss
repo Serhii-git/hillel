@@ -18,6 +18,11 @@
       background-color: var(--color-separator);
       border-radius: 8px;
     }
+
+    @include mobile {
+      right: 10px;
+      top: 34px;
+    }
   }
 
   &__content {

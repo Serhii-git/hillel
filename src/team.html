@@ -7,38 +7,48 @@
   <div class="site-container">
     <header class="header">
       <div class="container header__container">
-        <div class="header__logo decor--light">
-          <a href="index.html" class="logo">
-            <img loading="lazy" src="img/logo.svg" class="image" width="130" height="60" alt="Hlegal">
-          </a>
-          <p class="decor__text decor__text--light">team</p>
+        <div class="header__logo-wrapper">
+          <div class="header__logo decor--light">
+            <a href="index.html" class="logo">
+              <img loading="lazy" src="img/logo.svg" class="image" width="130" height="60" alt="Hlegal">
+            </a>
+            <p class="decor__text decor__text--light">team</p>
+          </div>
+          <button class="burger burger--dark" aria-label="Открыть меню" aria-expanded="false" data-burger>
+            <span class="burger__line"></span>
+          </button>
         </div>
         <div class="header__right">
           <div class="header__right-info right-info">
-            <div class="right-info__language-list">
-              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Ukrainian language">Ук</a>
-              <a href="#" class="right-info__language-link right-info__language-link--light" aria-label="Russian language">Ру</a>
-              <a href="#"
-                class="right-info__language-link right-info__language-link--light right-info__language-link--active right-info__language-link--light--active"
-                aria-label="English language">En</a>
-            </div>
-            <div class="right-info__address our-address" aria-label="Our address">
+            <ul class="list-reset right-info__language-list">
+              <li class="right-info__language-item">
+                <a href="#" class="right-info__language-link" aria-label="Ukrainian language">Ук</a>
+              </li>
+              <li class="right-info__language-item">
+                <a href="#" class="right-info__language-link" aria-label="Russian language">Ру</a>
+              </li>
+              <li class="right-info__language-item">
+                <a href="#" class="right-info__language-link right-info__language-link--active" aria-label="English language">En</a>
+              </li>
+            </ul>
+            <div class="right-info__address our-address">
               <p>Kyiv, Mechnikova str, 14/1</p>
             </div>
             <a href="tel:0800211927" class="right-info__tel our-tel" aria-label="Our phone">0800 211 927</a>
-            <a href="faceboock.com" class="right-info__social" aria-label="Our Facebook page">
+            <a href="https://m.facebook.com/" target="_blank" class="right-info__social" aria-label="Our Facebook page">
               <svg>
                 <use xlink:href="img/sprite.svg#fb-header"></use>
               </svg>
             </a>
           </div>
-          <nav class="nav" title="Main menu">
+          <nav class="nav nav--dark" data-menu title="Main menu">
             <ul class="list-reset nav__list">
-              <li class="nav__item"><a href="about.html" class="nav__link nav-link__active nav-link__active--light">about us</a></li>
-              <li class="nav__item"><a href="services.html" class="nav__link nav__link--light">services</a></li>
-              <li class="nav__item"><a href="team.html" class="nav__link nav__link--light">team</a></li>
-              <li class="nav__item"><a href="publications.html" class="nav__link nav__link--light">publication</a></li>
-              <li class="nav__item"><a href="contacts.html" class="nav__link nav__link--light">contacts</a></li>
+              <li class="nav__item nav__item--dark"><a href="about.html" class="nav__link nav-link__active nav-link__active--light">about
+                  us</a></li>
+              <li class="nav__item nav__item--dark"><a href="services.html" class="nav__link nav__link--light">services</a></li>
+              <li class="nav__item nav__item--dark"><a href="team.html" class="nav__link nav__link--light">team</a></li>
+              <li class="nav__item nav__item--dark"><a href="publications.html" class="nav__link nav__link--light">publication</a></li>
+              <li class="nav__item nav__item--dark"><a href="contacts.html" class="nav__link nav__link--light">contacts</a></li>
             </ul>
           </nav>
         </div>
@@ -68,7 +78,7 @@
                 <picture>
                   <source srcset="img/team-2.avif" type="image/avif">
                   <source srcset="img/team-2.webp" type="image/webp">
-                  <img loading="lazy" src="img/team-2.jpg" class="image" alt="Team image 1">
+                  <img loading="lazy" src="img/team-2.jpg" class="image" alt="Team image 2">
                 </picture>
               </div>
               <div class="item-team__descr">
@@ -81,7 +91,7 @@
                 <picture>
                   <source srcset="img/team-3.avif" type="image/avif">
                   <source srcset="img/team-3.webp" type="image/webp">
-                  <img loading="lazy" src="img/team-3.jpg" class="image" alt="Team image 1">
+                  <img loading="lazy" src="img/team-3.jpg" class="image" alt="Team image 3">
                 </picture>
               </div>
               <div class="item-team__descr">
@@ -94,7 +104,7 @@
                 <picture>
                   <source srcset="img/team-4.avif" type="image/avif">
                   <source srcset="img/team-4.webp" type="image/webp">
-                  <img loading="lazy" src="img/team-4.jpg" class="image" alt="Team image 1">
+                  <img loading="lazy" src="img/team-4.jpg" class="image" alt="Team image 4">
                 </picture>
               </div>
               <div class="item-team__descr">
@@ -107,7 +117,7 @@
                 <picture>
                   <source srcset="img/team-5.avif" type="image/avif">
                   <source srcset="img/team-5.webp" type="image/webp">
-                  <img loading="lazy" src="img/team-5.jpg" class="image" alt="Team image 1">
+                  <img loading="lazy" src="img/team-5.jpg" class="image" alt="Team image 5">
                 </picture>
               </div>
               <div class="item-team__descr">
@@ -120,7 +130,7 @@
                 <picture>
                   <source srcset="img/team-6.avif" type="image/avif">
                   <source srcset="img/team-6.webp" type="image/webp">
-                  <img loading="lazy" src="img/team-6.jpg" class="image" alt="Team image 1">
+                  <img loading="lazy" src="img/team-6.jpg" class="image" alt="Team image 61">
                 </picture>
               </div>
               <div class="item-team__descr">

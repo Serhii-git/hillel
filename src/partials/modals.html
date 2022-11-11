@@ -4,7 +4,7 @@
       <img loading="lazy" src="img/close-popup.svg" class="image" width="32" height="32" alt="Close popup">
     </button>
     <div class="graph-modal__content">
-      <form action="#" class="form graph-modal__form">
+      <form action="#" class="form graph-modal__form order-form" novalidate="novalidate">
         <h2 class="form__title section-title">We would like to help you</h2>
         <div class="form__top">
           <label class="form__label">
@@ -15,10 +15,10 @@
         <div class="form__bottom">
           <h3 class="form__subtitle">How to answer you?</h3>
           <label class="form__label">
-            <input type="tel" name="Tel" class="input-reset form__input input-tel" required placeholder="Phone number" pattern="[0-9]{9,12}">
+            <input type="tel" name="Tel" class="input-reset form__input input-tel" required placeholder="Phone number">
           </label>
           <label class="form__label">
-          <input type="email" name="Email" class="input-reset form__input" required placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+          <input type="email" name="Email" class="input-reset form__input input-email" required placeholder="Email">
           </label>
         </div>
         <button class="btn-reset btn form__btn">Send message</button>

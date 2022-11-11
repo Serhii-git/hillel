@@ -6,6 +6,10 @@
       max-width: 1080px;
     }
 
+    @include mobile {
+     padding: 0 10px;
+    }
+
   }
   &__tabs {
     display: flex;

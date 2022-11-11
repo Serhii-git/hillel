@@ -36,7 +36,6 @@ figure {
 img {
   height: auto;
   max-width: 100%;
-  // object-fit: cover;
   vertical-align: top;
 }
 
@@ -45,11 +44,11 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  overflow: hidden;
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
 }
 
 .btn-reset {
@@ -105,16 +104,3 @@ a {
   text-align: center;
 }
 
-/* .dis-scroll {
-  position: fixed;
-  left: 0;
-  top: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  overscroll-behavior: none;
-} */
-
-/* .page--ios .dis-scroll {
-  position: relative;
-} */

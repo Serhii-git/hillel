@@ -1,4 +1,5 @@
 .tabs {
+  position: relative;
   &__nav {
     margin-right: 60px;
     padding-left: 0;
@@ -15,19 +16,29 @@
       margin-right: 20px;
     }
     @include mobile {
+      display: block;
       margin-right: 0;
+      margin-bottom: 30px;
       max-width: 100%;
-      flex-direction: row;
-      flex-wrap: wrap;
+      ::after {
+        position: absolute;
+        content: "";
+        top: 115px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--color-text);
+      }
     }
   }
 
   &__nav-item {
     @include mb(30px);
-    @include mobile {
-      @include mr(15px);
-     margin-bottom: 30px;
 
+    @include mobile {
+      @include mb(10px);
+      margin-right: 15px;
+      margin-bottom: 15px;
     }
   }
 
@@ -92,6 +103,15 @@
         opacity: 0.3;
       }
     }
+
+    @include mobile {
+      max-width: 420px;
+      margin-left: 0;
+      ::before {
+        width: 0;
+        height: 0;
+      }
+    }
   }
 
   &__panel {
@@ -110,9 +130,17 @@
     @include small-tablet {
       padding-top: 0;
     }
+
+    @include mobile {
+      margin-bottom: 30px;
+      font-size: 20px;
+      text-align: center;
+      line-height: 24px;
+    }
   }
 
   &__panel-text {
+    font-weight: 400;
     margin-bottom: 73px;
     font-size: 19px;
     line-height: 30px;

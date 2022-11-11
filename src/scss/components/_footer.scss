@@ -7,6 +7,10 @@
     @include big-desktop {
       max-width: 1320px;
     }
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__left {
@@ -17,6 +21,14 @@
     padding-top: 32px;
     line-height: 20px;
     color: var(--color-text);
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 30px;
   }
 }
 
@@ -27,14 +39,12 @@
     align-items: center;
     p {
       position: relative;
+      margin-right: 26px;
     }
     &::after {
       position: absolute;
       right: 154px;
       background-color: var(--color-text);
-    }
-    p {
-      margin-right: 26px;
     }
     a {
       font-weight: 700;
@@ -43,6 +53,17 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       color: var(--color-active-regular);
+    }
+
+    @include mobile {
+      flex-direction: column;
+      &::after {
+        background-color: transparent;
+      }
+      p {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     }
   }
 }
@@ -58,6 +79,10 @@
     transition: ease-in-out 0.2s;
     &:hover {
       fill: var(--color-accent);
+    }
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 10px;
     }
   }
 
@@ -76,5 +101,23 @@
     &::after {
       background-color: var(--color-text);
     }
+
+    @include mobile {
+      margin-bottom: 10px;
+      &::before {
+        background-color: transparent;
+      }
+      &::after {
+        background-color: transparent;
+      }
+    }
+
+    @include mobile {
+      margin-right: 0;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
   }
 }

@@ -6,10 +6,29 @@
       margin-left: 5px;
       justify-content: flex-start;
     }
+    @include mobile {
+      margin-top: 65px;
+      flex-direction: column;
+    }
   }
 
   &__item {
     @include mr(15px);
+
+    @include mobile {
+      text-align: center;
+      background-color: var(--color-bg);
+      border-radius: 12px;
+      @include mb(15px);
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    &--dark {
+      @include mobile {
+       background-color: var(--color-main);
+
+      }
+    }
   }
 
   &__link {
@@ -33,6 +52,13 @@
         width: 100%;
       }
     }
+
+    @include mobile {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: var(--color-active-regular);
+    }
   }
 
   &__link--light {
@@ -42,13 +68,32 @@
     }
   }
   @include mobile {
-    display: none;
+    margin: 0 5px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 500;
+    overflow-y: auto;
+    width: 97%;
+    height: 50vh;
+    background-color: var(--color-light);
+    border-radius: 12px 12px 0px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    &--dark {
+      background-color: var(--color-main);
+    }
   }
 }
 
 .nav-link__active {
   border-bottom: 2px solid var(--color-accent);
   color: var(--color-accent);
+
+  @include mobile {
+    border-bottom: none;
+  }
 
   &--light {
     &::after {
@@ -71,9 +116,14 @@
 
 .burger {
   @include burger;
+  display: none;
 
-  
+  @include mobile {
+    display: block;
+  }
 }
 
 .menu--active {
+  opacity: 1;
+  visibility: visible;
 }

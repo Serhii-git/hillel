@@ -5,14 +5,37 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      padding: 0 30px;
+    }
+
+    @include small-tablet {
+      margin-top: 235px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @include mobile {
+      margin-top: 110px;
+      padding: 0 10px;
+    }
   }
 
   &__left {
     width: calc(50% - 30px);
+
+    @include small-tablet {
+      width: 100%;
+      margin-bottom: 60px;
+    }
   }
 
   &__right {
     width: calc(50% - 30px);
+    @include small-tablet {
+      width: 100%;
+    }
   }
 }
 .left-contacts {
@@ -100,5 +123,9 @@
     padding: 30px;
     background: var(--color-bg);
     border-radius: 12px;
+
+    @include mobile {
+      padding: 0;
+    }
   }
 }
