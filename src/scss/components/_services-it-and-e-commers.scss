@@ -40,9 +40,6 @@
     color: var(--color-light);
   }
 
-  &__btn {
-  }
-
   &__description {
     display: flex;
   }
@@ -57,9 +54,6 @@
     color: var(--color-light);
   }
 
-  &__list {
-  }
-
   &__item {
     @include mb(15px);
   }
@@ -69,14 +63,9 @@
     line-height: 26px;
     color: var(--color-light);
   }
-
-
 }
 
 .description-left {
   margin-right: 60px;
   max-width: 635px;
-}
-
-.description-right {
 }

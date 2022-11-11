@@ -38,9 +38,6 @@
 }
 
 .left {
-  &__team-entry {
-  }
-
   &__image {
     img {
       height: 100%;
@@ -52,9 +49,6 @@
 }
 
 .right {
-  &__team-entry {
-  }
-
   &__employee-name {
     margin-bottom: 30px;
     padding-bottom: 30px;
@@ -115,14 +109,12 @@
     line-height: 20px;
     color: var(--color-active-regular);
     transition: color 0.3s;
-      &:hover {
-        color: var(--color-accent);
-      }
-
+    &:hover {
+      color: var(--color-accent);
+    }
   }
 
   &__employee-descr {
-
     @include small-tablet {
       display: none;
     }

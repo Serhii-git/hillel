@@ -50,9 +50,6 @@
     -webkit-text-fill-color: transparent;
   }
 
-  &__list {
-  }
-
   &__item {
     @include mb(15px);
     font-size: 19px;
@@ -129,15 +126,9 @@
       margin-bottom: 30px;
     }
   }
-
-  &__right {
-  }
 }
 
 .left-quality {
-  &__list {
-  }
-
   &__item {
     @include mb(15px);
     font-size: 19px;

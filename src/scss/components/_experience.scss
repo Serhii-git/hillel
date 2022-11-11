@@ -7,15 +7,14 @@
     }
 
     @include mobile {
-     padding: 0 10px;
+      padding: 0 10px;
     }
-
   }
+
   &__tabs {
     display: flex;
     @include mobile {
       display: block;
     }
   }
-
 }

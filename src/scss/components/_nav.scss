@@ -67,6 +67,7 @@
       background-color: var(--color-active-regular);
     }
   }
+
   @include mobile {
     margin: 0 5px;
     position: fixed;
@@ -115,6 +116,7 @@
 }
 
 .burger {
+  
   @include burger;
   display: none;
 
